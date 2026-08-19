@@ -1,0 +1,24 @@
+{
+  "name": "real-estate-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Full-stack real estate & neighborhood intelligence platform (Next.js + Express + PostGIS + FastAPI ML service)",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @rep/web",
+    "dev:api": "npm run dev --workspace @rep/api",
+    "dev:ml": "npm run dev --workspace @rep/ml-service",
+    "build": "npm run build --workspace @rep/web && npm run typecheck --workspace @rep/api",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "db:migrate": "npm run db:migrate --workspace @rep/api",
+    "db:seed": "npm run db:seed --workspace @rep/api",
+    "db:guides": "npm run db:guides --workspace @rep/api",
+    "db:properties": "npm run db:properties --workspace @rep/api"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

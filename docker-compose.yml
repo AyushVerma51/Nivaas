@@ -1,0 +1,96 @@
+# Real Estate Platform — local development stack
+# Usage: docker compose up -d
+#
+# Services:
+#   db         PostgreSQL 16 + PostGIS (geo queries, radius search)
+#   redis      Cache for amenities / city-guide lookups
+#   api        Express API (built from apps/api)
+#   ml-service FastAPI price-prediction wrapper (built from apps/ml-service)
+#   web        Next.js frontend (built from apps/web)
+#
+# The Node/Python images build from the repo so all services run together;
+# alternatively run db + redis only and use `npm run dev` / `uvicorn` locally.
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: rep-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: real_estate
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d real_estate"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: rep-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  ml-service:
+    build: ./apps/ml-service
+    container_name: rep-ml
+    environment:
+      MODEL_PATH: /app/model/house_price_model.pkl
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./apps/ml-service/model:/app/model
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  api:
+    build: ./apps/api
+    container_name: rep-api
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db:5432/real_estate
+      PORT: 4000
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:-dev-access-secret}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-dev-refresh-secret}
+      ML_SERVICE_URL: http://ml-service:8000
+      CORS_ORIGIN: http://localhost:3000
+    ports:
+      - "4000:4000"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:4000/api/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    build: ./apps/web
+    container_name: rep-web
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:4000/api
+    ports:
+      - "3000:3000"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    depends_on:
+      - api
+
+volumes:
+  db_data:
+  redis_data:

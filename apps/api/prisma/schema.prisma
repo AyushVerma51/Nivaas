@@ -1,0 +1,329 @@
+// Atlas India — tourism backend schema (Prisma + PostgreSQL)
+// Content (states/cities/destinations/attractions/experiences/media),
+// users (auth/journey/wishlist/visited/reviews/itineraries) and analytics.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("ATLAS_DATABASE_URL")
+}
+
+// ---------------------------------------------------------------------------
+// CONTENT
+// ---------------------------------------------------------------------------
+
+enum RegionName {
+  NORTH
+  SOUTH
+  EAST
+  WEST
+  CENTRAL
+  NORTHEAST
+  HIMALAYAN
+  ISLANDS
+}
+
+model Region {
+  id        Int         @id @default(autoincrement())
+  name      RegionName  @unique
+  slug      String      @unique
+  blurb     String
+  states    State[]
+  createdAt DateTime    @default(now())
+}
+
+enum StateType {
+  STATE
+  UNION_TERRITORY
+}
+
+model State {
+  id               String   @id @default(cuid())
+  name             String
+  slug             String   @unique
+  type             StateType
+  regionId         Int
+  region           Region   @relation(fields: [regionId], references: [id])
+  capital          String?
+  description      String
+  shortDescription String
+  heroImage        String?
+  latitude         Float?
+  longitude        Float?
+  bestTimeToVisit  String?
+  seoTitle         String?
+  seoDescription   String?
+  seoKeywords      String?
+  featured         Boolean  @default(false)
+  cities           City[]
+  destinations     Destination[]
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([name])
+  @@index([regionId])
+}
+
+model City {
+  id               String        @id @default(cuid())
+  name             String
+  slug             String        @unique
+  stateId          String
+  state            State         @relation(fields: [stateId], references: [id])
+  description      String        @default("")
+  shortDescription String        @default("")
+  latitude         Float?
+  longitude        Float?
+  heroImage        String?
+  destinations     Destination[]
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  @@index([stateId])
+  @@index([name])
+}
+
+model Destination {
+  id                    String                  @id @default(cuid())
+  name                  String
+  slug                  String                  @unique
+  cityId                String?
+  city                  City?                   @relation(fields: [cityId], references: [id])
+  stateId               String
+  state                 State                   @relation(fields: [stateId], references: [id])
+  category              String                  @default("Heritage")
+  description           String
+  shortDescription      String
+  heroImage             String?
+  latitude              Float?
+  longitude             Float?
+  bestTimeToVisit       String?
+  estimatedVisitDuration String?
+  popularityScore       Int                     @default(50)
+  featured              Boolean                 @default(false)
+  seoTitle              String?
+  seoDescription        String?
+  seoKeywords           String?
+  attractions           Attraction[]
+  experiences           DestinationExperience[]
+  wishlistedBy          Wishlist[]
+  visitedBy             VisitedDestination[]
+  reviews               Review[]
+  itineraryDestinations ItineraryDestination[]
+  createdAt             DateTime                @default(now())
+  updatedAt             DateTime                @updatedAt
+
+  @@index([name])
+  @@index([stateId])
+  @@index([cityId])
+  @@index([featured])
+  @@index([popularityScore])
+}
+
+model Attraction {
+  id                 String      @id @default(cuid())
+  destinationId      String
+  destination        Destination @relation(fields: [destinationId], references: [id])
+  name               String
+  description        String      @default("")
+  image              String?
+  latitude           Float?
+  longitude          Float?
+  estimatedDuration  String?
+  ticketRequired     Boolean     @default(false)
+  createdAt          DateTime    @default(now())
+  updatedAt          DateTime    @updatedAt
+
+  @@index([destinationId])
+}
+
+model Experience {
+  id          String                @id @default(cuid())
+  name        String
+  slug        String                @unique
+  description String
+  icon        String?
+  image       String?
+  destinations DestinationExperience[]
+  createdAt   DateTime              @default(now())
+  updatedAt   DateTime              @updatedAt
+
+  @@index([name])
+}
+
+model DestinationExperience {
+  destinationId String
+  experienceId  String
+  destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  experience    Experience  @relation(fields: [experienceId], references: [id], onDelete: Cascade)
+
+  @@id([destinationId, experienceId])
+  @@index([experienceId])
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  url       String
+  altText   String   @default("")
+  width     Int?
+  height    Int?
+  type      String?
+  provider  String   @default("unsplash")
+  createdAt DateTime @default(now())
+}
+
+model FeaturedJourney {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  days        Int
+  theme       String[]
+  tagline     String
+  description String
+  heroImage   String?
+  stops       String[] // destination slugs, in order
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ---------------------------------------------------------------------------
+// USERS
+// ---------------------------------------------------------------------------
+
+enum Role {
+  USER
+  EDITOR
+  ADMIN
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  avatar       String?
+  role         Role     @default(USER)
+  wishlist     Wishlist[]
+  visited      VisitedDestination[]
+  itineraries  Itinerary[]
+  reviews      Review[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// ---------------------------------------------------------------------------
+// USER FEATURES
+// ---------------------------------------------------------------------------
+
+model Wishlist {
+  id            String      @id @default(cuid())
+  userId        String
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  destinationId String
+  destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  createdAt     DateTime    @default(now())
+
+  @@unique([userId, destinationId])
+  @@index([userId])
+  @@index([destinationId])
+}
+
+model VisitedDestination {
+  id            String      @id @default(cuid())
+  userId        String
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  destinationId String
+  destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  visitedAt     DateTime?
+  notes         String?
+  createdAt     DateTime    @default(now())
+
+  @@unique([userId, destinationId])
+  @@index([userId])
+  @@index([destinationId])
+}
+
+model Itinerary {
+  id          String           @id @default(cuid())
+  userId      String
+  user        User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title       String
+  description String?
+  startDate   DateTime?
+  endDate     DateTime?
+  budget      Int?
+  travelStyle String?
+  days        ItineraryDay[]
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@index([userId])
+}
+
+model ItineraryDay {
+  id           String                  @id @default(cuid())
+  itineraryId  String
+  itinerary    Itinerary               @relation(fields: [itineraryId], references: [id], onDelete: Cascade)
+  dayNumber    Int
+  date         DateTime?
+  title        String?
+  description  String?
+  destinations ItineraryDestination[]
+
+  @@unique([itineraryId, dayNumber])
+}
+
+model ItineraryDestination {
+  itineraryDayId  String
+  destinationId   String
+  itineraryDay    ItineraryDay @relation(fields: [itineraryDayId], references: [id], onDelete: Cascade)
+  destination     Destination  @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  order           Int          @default(0)
+  note            String?
+
+  @@id([itineraryDayId, destinationId])
+  @@index([destinationId])
+}
+
+enum ReviewStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model Review {
+  id            String        @id @default(cuid())
+  userId        String
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  destinationId String
+  destination   Destination   @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  rating        Int
+  title         String?
+  content       String
+  status        ReviewStatus  @default(PENDING)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@index([destinationId])
+  @@index([status])
+  @@index([userId])
+}
+
+// ---------------------------------------------------------------------------
+// ANALYTICS
+// ---------------------------------------------------------------------------
+
+model AnalyticsEvent {
+  id        String   @id @default(cuid())
+  event     String
+  entityId  String?
+  entityType String?
+  meta      Json?
+  createdAt DateTime @default(now())
+
+  @@index([event])
+  @@index([createdAt])
+}

@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv
+venv/
+
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Model artifacts (binary, fetched from source repo — see README)
+apps/ml-service/model/*.pkl
+!apps/ml-service/model/README.md
+
+# Training data (large CSVs fetched from public sources — see MODEL_CARD.md)
+apps/ml-service/train/.data/
+apps/ml-service/train/*.log
+apps/ml-service/train/*.err
+
+# Local PostGIS bundle + data dir (downloaded locally — Docker unavailable)
+.postgis/

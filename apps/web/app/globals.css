@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/*  Design tokens — warm editorial system (HUTS-inspired, India-first) */
+/* ------------------------------------------------------------------ */
+@theme {
+  /* Surfaces */
+  --color-canvas: #f2f0e8; /* primary warm background */
+  --color-canvas-2: #e7e3d8; /* secondary warm background */
+  --color-cream: #f8f7f2; /* off-white */
+  --color-paper: #ffffff;
+
+  /* Ink */
+  --color-ink: #20211d; /* primary dark */
+  --color-ink-2: #292a25; /* deep charcoal */
+  --color-ink-muted: #55564e; /* readable muted text on light */
+
+  /* Earthy accents */
+  --color-moss: #66705e;
+  --color-olive: #7a8068;
+  --color-sand: #d8d0be;
+  --color-stone: #b9b1a0;
+  --color-clay: #a85f43; /* terracotta accent */
+
+  /* Typography */
+  --font-display: "DM Serif Display", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Base                                                               */
+/* ------------------------------------------------------------------ */
+:root {
+  --bg: #f2f0e8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-canvas text-ink font-sans antialiased;
+  font-feature-settings: "ss01", "cv11";
+}
+
+::selection {
+  background: #a85f43;
+  color: #f8f7f2;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Editorial primitives                                               */
+/* ------------------------------------------------------------------ */
+
+/* Uppercase micro-label used above headings */
+.eyebrow {
+  @apply text-[0.7rem] font-semibold uppercase tracking-[0.22em];
+  color: #66705e;
+}
+
+/* Primary button — dark, minimal */
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-sm bg-ink px-6 py-3 text-sm font-medium text-cream transition-colors duration-300 hover:bg-ink-2;
+}
+
+/* Secondary button — transparent, dark border */
+.btn-secondary {
+  @apply inline-flex items-center gap-2 rounded-sm border border-ink/40 px-6 py-3 text-sm font-medium text-ink transition-colors duration-300 hover:border-ink hover:bg-ink hover:text-cream;
+}
+
+/* Text link with moving arrow */
+.link-arrow {
+  @apply inline-flex items-center gap-1.5 text-sm font-semibold text-ink transition-colors;
+}
+.link-arrow:hover {
+  color: #a85f43;
+}
+.link-arrow:hover .link-arrow-icon {
+  transform: translateX(4px);
+}
+.link-arrow-icon {
+  transition: transform 0.3s ease-out;
+}
+
+/* Cards — quiet, editorial (soft corners, hairline border, no heavy shadow) */
+.card {
+  @apply overflow-hidden rounded-md border border-ink/10 bg-paper transition duration-300;
+}
+
+/* Image reveal helper (hover zoom) */
+.img-zoom {
+  @apply overflow-hidden;
+}
+.img-zoom img {
+  @apply transition-transform duration-700 ease-out;
+}
+.group:hover .img-zoom img,
+.img-zoom:hover img {
+  transform: scale(1.04);
+}
+
+/* Fade-up on scroll (respects reduced motion) */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    animation: none;
+  }
+}
+
+/* Leaflet map container — force full height inside the explorer */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
