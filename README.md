@@ -1,4 +1,4 @@
-# Estately — Real Estate & Neighborhood Intelligence Platform
+# Nivaas — Real Estate & Neighborhood Intelligence Platform
 
 A full-stack real estate web platform for India with AI price prediction, map exploration, neighborhood intelligence, city guides, and Atlas India tourism.
 
