@@ -1,7 +1,7 @@
 /**
  * Stable image URL utility
  *
- * Maps destination and food queries to stable, keyless Unsplash images.
+ * Maps destination and food queries to locally bundled image files.
  */
 import { getImageFallback } from "@/lib/image-fallbacks";
 
@@ -41,7 +41,7 @@ interface ImageOptions {
 }
 
 /**
- * Generate a SourceSplash image URL for a destination/feature card.
+ * Generate a local image URL for a destination/feature card.
  *
  * The legacy function name remains for existing callers.
  */
@@ -81,7 +81,7 @@ export function getSourceSplashImage(options: ImageOptions): string {
 }
 
 /**
- * Generate a SourceSplash URL for a food item.
+ * Generate a local image URL for a food item.
  *
  * Uses the same stable category mapping for food cards.
  */

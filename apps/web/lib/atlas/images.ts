@@ -1,7 +1,7 @@
 /**
  * Centralized image configuration for Atlas India.
  *
- * Uses stable, keyless Unsplash images for Atlas cards and hero art.
+ * Uses locally bundled photos for Atlas cards and hero art.
  */
 import { getImageFallback } from "@/lib/image-fallbacks";
 

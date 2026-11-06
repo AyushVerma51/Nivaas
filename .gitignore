@@ -41,3 +41,5 @@ apps/ml-service/train/*.err
 
 # Local PostGIS bundle + data dir (downloaded locally — Docker unavailable)
 .postgis/
+.vercel
+.env*

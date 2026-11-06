@@ -130,7 +130,7 @@ const PHOTOS: Record<string, string> = {
   waterfall: "photo-1433086966358-54859d0ed716",
 };
 
-/** Return a stable, keyless image URL for a city or visual category. */
+/** Return a stable local image path for a place or visual category. */
 export function getImageFallback(query: string, _width = 1200): string {
   const normalize = (value: string) =>
     ` ${value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()} `;

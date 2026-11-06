@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import type { CityGuide, TouristSpot } from "@rep/types";
 import { API_URL } from "@/lib/api-client";
-import { fetchImagesForCards, type ImageResult } from "@/lib/fetch-images";
+import { fetchImagesForCards } from "@/lib/fetch-images";
+import { getFallbackCityGuide } from "@/lib/city-guide-data";
 
 export async function generateMetadata({
   params,
@@ -34,12 +35,21 @@ const SPOT_EMOJI: Record<TouristSpot["category"], string> = {
 };
 
 async function fetchGuide(city: string): Promise<CityGuide> {
-  const res = await fetch(`${API_URL}/city-guide/${encodeURIComponent(city)}`, {
-    cache: "no-store",
-  });
-  if (res.status === 404) return Promise.reject(new Error("not-found"));
-  if (!res.ok) throw new Error(`Failed to load guide (${res.status})`);
-  return res.json();
+  let status = 0;
+  try {
+    const res = await fetch(`${API_URL}/city-guide/${encodeURIComponent(city)}`, {
+      cache: "no-store",
+    });
+    status = res.status;
+    if (res.ok) return res.json();
+  } catch {
+    // Fall through to the bundled city guide data.
+  }
+
+  const fallback = getFallbackCityGuide(city);
+  if (fallback) return fallback;
+  if (status === 404) throw new Error("not-found");
+  throw new Error("api-unavailable");
 }
 
 export default async function CityGuidePage({
@@ -58,7 +68,7 @@ export default async function CityGuidePage({
         <div className="mx-auto max-w-3xl px-4 py-24 text-center">
           <h1 className="text-2xl font-bold">No guide for this city yet</h1>
           <p className="mt-2 text-slate-600">
-            Guides are available for 200+ Indian cities — search the index to find yours.
+            Browse the available city guides to find your next destination.
           </p>
           <a
             href="/city-guide"

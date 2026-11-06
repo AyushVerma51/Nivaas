@@ -5,6 +5,9 @@
  * mirrors these (plus PostGIS/geometry columns).
  */
 
+export { seedCities } from "./city-guide-data";
+export type { SeedCity } from "./city-guide-data";
+
 export type UserRole = "buyer" | "owner" | "agent" | "admin";
 
 export interface User {
