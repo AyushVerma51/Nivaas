@@ -1,13 +1,9 @@
 /**
- * SourceSplash Image URL Utility
+ * Stable image URL utility
  *
- * Generates dynamic image URLs from SourceSplash based on card content.
- * No API key required — anonymous hotlinks are free forever.
- *
- * API: https://www.sourcesplash.com/i/random?q=QUERY&w=WIDTH
+ * Maps destination and food queries to stable, keyless Unsplash images.
  */
-
-const BASE_URL = "https://www.sourcesplash.com/i/random";
+import { getImageFallback } from "@/lib/image-fallbacks";
 
 /** Sanitize a query string for URL encoding. */
 function sanitize(value: string | undefined | null): string {
@@ -47,12 +43,7 @@ interface ImageOptions {
 /**
  * Generate a SourceSplash image URL for a destination/feature card.
  *
- * Examples:
- *   getSourceSplashImage({ title: "Goa", category: "Beaches" })
- *   → "https://www.sourcesplash.com/i/random?q=Goa%20India%20beach%20coastline&w=800"
- *
- *   getSourceSplashImage({ title: "Jaipur", state: "Rajasthan", category: "Heritage" })
- *   → "https://www.sourcesplash.com/i/random?q=Jaipur%20Rajasthan%20India%20historical%20palace%20temple&w=800"
+ * The legacy function name remains for existing callers.
  */
 export function getSourceSplashImage(options: ImageOptions): string {
   const { title, state, category, region, width = 800 } = options;
@@ -86,18 +77,13 @@ export function getSourceSplashImage(options: ImageOptions): string {
     }
   }
 
-  const query = parts.join(" ");
-  const encoded = encodeURIComponent(query);
-
-  return `${BASE_URL}?q=${encoded}&w=${width}`;
+  return getImageFallback(parts.join(" "), width);
 }
 
 /**
  * Generate a SourceSplash URL for a food item.
  *
- * Examples:
- *   getSourceSplashFoodImage({ title: "Biryani", city: "Hyderabad" })
- *   → "https://www.sourcesplash.com/i/random?q=Biryani%20Hyderabad%20Indian%20food&w=800"
+ * Uses the same stable category mapping for food cards.
  */
 export function getSourceSplashFoodImage(options: {
   title: string;
@@ -123,8 +109,5 @@ export function getSourceSplashFoodImage(options: {
   // Always add "Indian food" for food queries
   parts.push("Indian food");
 
-  const query = parts.join(" ");
-  const encoded = encodeURIComponent(query);
-
-  return `${BASE_URL}?q=${encoded}&w=${width}`;
+  return getImageFallback(parts.join(" "), width);
 }

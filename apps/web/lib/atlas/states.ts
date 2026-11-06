@@ -11,7 +11,7 @@ export const states: State[] = [
     tagline: "The land of kings",
     description:
       "Fortresses rising from desert plains, blue cities and lake palaces — Rajasthan is India's grandest stage, where every citadel carries a dynasty and every courtyard a story.",
-    heroImage: ss("Rajasthan India fort desert palace"),
+    heroImage: ss("Rajasthan North India"),
     destinations: ["jaipur", "jodhpur", "udaipur", "jaisalmer", "pushkar"],
     experiences: ["heritage", "food", "culture"],
     bestTime: "October to March",
@@ -25,7 +25,7 @@ export const states: State[] = [
     tagline: "Paradise on earth",
     description:
       "Shikaras gliding over Dal Lake, saffron fields, and the meadows of Gulmarg — Kashmir is the valley poets have spent centuries trying to describe.",
-    heroImage: ss("Kashmir India mountains lake Dal"),
+    heroImage: ss("Jammu & Kashmir Himalayan India"),
     destinations: ["srinagar", "gulmarg"],
     experiences: ["mountains", "nature"],
     bestTime: "April to October",
@@ -39,7 +39,7 @@ export const states: State[] = [
     tagline: "The land of high passes",
     description:
       "Moonscapes above 11,000 feet, turquoise lakes, and monasteries perched on cliffs — Ladakh is India's high-altitude desert, silent and enormous.",
-    heroImage: ss("Ladakh India mountains landscape"),
+    heroImage: ss("Ladakh Himalayan India"),
     destinations: ["leh", "pangong"],
     experiences: ["adventure", "mountains", "spiritual"],
     bestTime: "May to September",
@@ -53,7 +53,7 @@ export const states: State[] = [
     tagline: "Land of the gods",
     description:
       "Pine forests, river valleys and Himalayan villages — Himachal moves from the bustle of Manali to the calm of Dharamshala without losing its mountain soul.",
-    heroImage: ss("Ladakh India mountains landscape"),
+    heroImage: ss("Himachal Pradesh Himalayan India"),
     destinations: ["manali", "dharamshala", "shimla"],
     experiences: ["mountains", "adventure", "nature"],
     bestTime: "March to June, October to December",
@@ -67,7 +67,7 @@ export const states: State[] = [
     tagline: "The abode of gods",
     description:
       "Source of the Ganges, home to Char Dham pilgrimages and the yoga town of Rishikesh — Uttarakhand is where the mountains begin and the spirit goes quiet.",
-    heroImage: ss("Uttarakhand India mountains waterfall"),
+    heroImage: ss("Uttarakhand Himalayan India"),
     destinations: ["rishikesh", "haridwar", "nainital"],
     experiences: ["adventure", "spiritual", "nature"],
     bestTime: "April to June, September to November",
@@ -81,7 +81,7 @@ export const states: State[] = [
     tagline: "The heartland of stories",
     description:
       "The Taj Mahal, the ghats of Varanasi, and the great plains of the Ganges — Uttar Pradesh holds more of India's iconic soul than almost anywhere else.",
-    heroImage: ss("Taj Mahal Agra India"),
+    heroImage: ss("Uttar Pradesh North India"),
     destinations: ["agra", "varanasi", "lucknow"],
     experiences: ["heritage", "spiritual", "food"],
     bestTime: "October to March",
@@ -95,7 +95,7 @@ export const states: State[] = [
     tagline: "Land of five rivers",
     description:
       "Golden Temple radiance, mustard fields and hearty food — Punjab is warm, loud, and full of heart.",
-    heroImage: ss("Golden Temple Amritsar India"),
+    heroImage: ss("Punjab North India"),
     destinations: ["amritsar"],
     experiences: ["spiritual", "food", "culture"],
     bestTime: "October to March",
@@ -109,7 +109,7 @@ export const states: State[] = [
     tagline: "India's granary",
     description:
       "The fertile belt around Delhi — heritage villages, wetlands, and the corridor to the rest of northern India.",
-    heroImage: ss("Gurugram Haryana India skyline"),
+    heroImage: ss("Haryana North India"),
     destinations: ["gurugram"],
     experiences: ["culture", "food"],
     bestTime: "October to March",
@@ -123,7 +123,7 @@ export const states: State[] = [
     tagline: "A thousand years of empire",
     description:
       "Seven cities layered into one — Mughal monuments, colonial avenues and bazaars that never sleep. Delhi is India's relentless, magnificent heartbeat.",
-    heroImage: ss("Delhi India Red Fort gate"),
+    heroImage: ss("Delhi North India"),
     destinations: ["delhi"],
     experiences: ["heritage", "food", "culture"],
     bestTime: "October to March",
@@ -137,7 +137,7 @@ export const states: State[] = [
     tagline: "The western gateway",
     description:
       "The white desert of Kutch, Asiatic lions at Gir, and the salt-trading history of the coast — Gujarat is a state of bold contrasts.",
-    heroImage: ss("Rann of Kutch Gujarat India desert"),
+    heroImage: ss("Gujarat West India"),
     destinations: ["kutch", "dwarka", "gir"],
     experiences: ["wildlife", "culture", "food"],
     bestTime: "November to February",
@@ -151,7 +151,7 @@ export const states: State[] = [
     tagline: "Empires, coasts and monsoon hills",
     description:
       "From the cave temples of Ajanta-Ellora to the Western Ghats and the beating heart of Mumbai — Maharashtra is India in fast-forward.",
-    heroImage: ss("Mumbai India skyline city"),
+    heroImage: ss("Maharashtra West India"),
     destinations: ["ajanta-ellora", "mumbai", "lonavala"],
     experiences: ["heritage", "food", "nature"],
     bestTime: "November to February",
@@ -165,7 +165,7 @@ export const states: State[] = [
     tagline: "Where the sun sets slowly",
     description:
       "Portuguese churches, palm-lined beaches and river cruises — Goa is India's most unhurried state, made for doing nothing very well.",
-    heroImage: ss("Goa India beach coast palm"),
+    heroImage: ss("Goa West India"),
     destinations: ["goa"],
     experiences: ["beaches", "food", "culture"],
     bestTime: "November to March",
@@ -179,7 +179,7 @@ export const states: State[] = [
     tagline: "Palaces, ruins and coffee hills",
     description:
       "Hampi's boulder-strewn ruins, Mysuru's palace, and the misty coffee estates of Coorg — Karnataka is the south's most varied canvas.",
-    heroImage: ss("Karnataka India Mysore Palace"),
+    heroImage: ss("Karnataka South India"),
     destinations: ["hampi", "mysuru", "coorg", "bengaluru"],
     experiences: ["heritage", "nature", "food"],
     bestTime: "October to March",
@@ -193,7 +193,7 @@ export const states: State[] = [
     tagline: "God's own country",
     description:
       "Backwaters, spice hills and Ayurveda — Kerala is lush, slow, and deeply green, a tropical counterpoint to the rest of India.",
-    heroImage: ss("Kerala India backwaters houseboat"),
+    heroImage: ss("Kerala South India"),
     destinations: ["alleppey", "munnar", "kochi", "trivandrum"],
     experiences: ["nature", "food", "beaches"],
     bestTime: "September to March",
@@ -207,7 +207,7 @@ export const states: State[] = [
     tagline: "Land of temple towers",
     description:
       "Dravidian gopurams piercing the sky, the shores of Mahabalipuram and the hill stations of the Nilgiris — Tamil Nadu is southern culture at full height.",
-    heroImage: ss("Tamil Nadu India temple gopuram"),
+    heroImage: ss("Tamil Nadu South India"),
     destinations: ["madurai", "mahabalipuram", "kanyakumari", "ooty"],
     experiences: ["spiritual", "heritage", "culture"],
     bestTime: "October to March",
@@ -221,7 +221,7 @@ export const states: State[] = [
     tagline: "Coast, ghats and temples",
     description:
       "The sacred hill of Tirupati, the mangroves of the Krishna delta, and spicy coastal cuisine — Andhra is the south's energetic eastern edge.",
-    heroImage: ss("Tamil Nadu India temple gopuram"),
+    heroImage: ss("Andhra Pradesh South India"),
     destinations: ["tirupati", "visakhapatnam"],
     experiences: ["spiritual", "food"],
     bestTime: "October to March",
@@ -235,7 +235,7 @@ export const states: State[] = [
     tagline: "City of pearls",
     description:
       "The Charminar, Golconda Fort and biryani that needs no introduction — Telangana revolves around Hyderabad's historic grandeur.",
-    heroImage: ss("Telangana Hyderabad Charminar India"),
+    heroImage: ss("Telangana South India"),
     destinations: ["hyderabad"],
     experiences: ["heritage", "food", "culture"],
     bestTime: "October to March",
@@ -249,7 +249,7 @@ export const states: State[] = [
     tagline: "The heart of incredible India",
     description:
       "Khajuraho's carved temples, the tiger forests of Kanha, and the marble gorges of Bhedaghat — Madhya Pradesh is India's wild, wonderful centre.",
-    heroImage: ss("Karnataka India Mysore Palace"),
+    heroImage: ss("Madhya Pradesh Central India"),
     destinations: ["khajuraho", "orchha", "kanha"],
     experiences: ["heritage", "wildlife", "spiritual"],
     bestTime: "October to March",
@@ -263,7 +263,7 @@ export const states: State[] = [
     tagline: "Tribal heart of India",
     description:
       "Waterfalls, dense forests and living tribal cultures — Chhattisgarh is central India's quiet, untamed secret.",
-    heroImage: ss("Meghalaya India living root bridge forest"),
+    heroImage: ss("Chhattisgarh Central India"),
     destinations: ["chitrakote"],
     experiences: ["nature", "culture"],
     bestTime: "November to February",
@@ -277,7 +277,7 @@ export const states: State[] = [
     tagline: "Cradle of enlightenment",
     description:
       "Bodh Gaya, where the Buddha attained enlightenment, and the ancient universities of Nalanda — Bihar is where Indian civilization found its voice.",
-    heroImage: ss("Bihar Bodh Gaya India temple"),
+    heroImage: ss("Bihar East India"),
     destinations: ["bodh-gaya", "nalanda"],
     experiences: ["spiritual", "heritage"],
     bestTime: "October to March",
@@ -291,7 +291,7 @@ export const states: State[] = [
     tagline: "Land of forests",
     description:
       "Waterfalls, Chota Nagpur's plateau forests and tribal heritage — Jharkhand is eastern India's green interior.",
-    heroImage: ss("Jharkhand India forest nature"),
+    heroImage: ss("Jharkhand East India"),
     destinations: ["ranki"],
     experiences: ["nature", "adventure"],
     bestTime: "October to March",
@@ -305,7 +305,7 @@ export const states: State[] = [
     tagline: "Tea, delta and tango of culture",
     description:
       "Darjeeling's tea gardens, Kolkata's literary soul, and the Sundarbans' mangroves — West Bengal is India's most cultured river state.",
-    heroImage: ss("Darjeeling West Bengal India tea"),
+    heroImage: ss("West Bengal East India"),
     destinations: ["darjeeling", "kolkata", "sundarbans"],
     experiences: ["culture", "food", "nature"],
     bestTime: "October to March",
@@ -319,7 +319,7 @@ export const states: State[] = [
     tagline: "Temples by the sea",
     description:
       "The sun temple of Konark, the temple city of Bhubaneswar, and unbroken tribal crafts — Odisha is coastal India at its most ancient.",
-    heroImage: ss("Odisha Konark Sun Temple India"),
+    heroImage: ss("Odisha East India"),
     destinations: ["konark", "puri"],
     experiences: ["heritage", "beaches", "culture"],
     bestTime: "November to February",
@@ -333,7 +333,7 @@ export const states: State[] = [
     tagline: "Land of the one-horned rhino",
     description:
       "Kaziranga's rhinos, Brahmaputra river islands and satras of culture — Assam is the gateway to the Northeast, lush and warm.",
-    heroImage: ss("Odisha Konark Sun Temple India"),
+    heroImage: ss("Assam Northeast India"),
     destinations: ["kaziranga", "guwahati"],
     experiences: ["wildlife", "nature", "culture"],
     bestTime: "November to March",
@@ -347,7 +347,7 @@ export const states: State[] = [
     tagline: "Abode of clouds",
     description:
       "Living root bridges, the wettest place on earth, and hills that disappear into mist — Meghalaya feels like another world entirely.",
-    heroImage: ss("Meghalaya India living root bridge forest"),
+    heroImage: ss("Meghalaya Northeast India"),
     destinations: ["shillong", "cherrapunji", "mawsynram"],
     experiences: ["nature", "adventure", "culture"],
     bestTime: "October to May",
@@ -361,7 +361,7 @@ export const states: State[] = [
     tagline: "Land of the dawn-lit mountains",
     description:
       "Where the sun first touches India — monasteries, snow peaks and the tribal valleys of the eastern Himalaya.",
-    heroImage: ss("Sikkim India Himalaya mountains"),
+    heroImage: ss("Arunachal Pradesh Northeast India"),
     destinations: ["tawang"],
     experiences: ["mountains", "spiritual", "adventure"],
     bestTime: "October to April",
@@ -375,7 +375,7 @@ export const states: State[] = [
     tagline: "Land of festivals",
     description:
       "Hornbill Festival, warrior villages and the Dzüko Valley — Nagaland is the Northeast's most vibrant cultural heart.",
-    heroImage: ss("Nagaland India hills festival"),
+    heroImage: ss("Nagaland Northeast India"),
     destinations: ["kohima", "dzuko"],
     experiences: ["culture", "adventure"],
     bestTime: "November to April",
@@ -389,7 +389,7 @@ export const states: State[] = [
     tagline: "Jewel of India",
     description:
       "Loktak's floating islands, classical dance and a landlocked lake country — Manipur is the Northeast's gentle jewel.",
-    heroImage: ss("Manipur India Loktak Lake"),
+    heroImage: ss("Manipur Northeast India"),
     destinations: ["loktak"],
     experiences: ["nature", "culture"],
     bestTime: "October to March",
@@ -403,7 +403,7 @@ export const states: State[] = [
     tagline: "Land of the highlanders",
     description:
       "Blue mountains, bamboo villages and the cleanest state in India — Mizoram is remote, green and quietly spectacular.",
-    heroImage: ss("Jharkhand India forest nature"),
+    heroImage: ss("Mizoram Northeast India"),
     destinations: ["aizawl"],
     experiences: ["nature", "culture"],
     bestTime: "November to March",
@@ -417,7 +417,7 @@ export const states: State[] = [
     tagline: "Palaces in the hills",
     description:
       "The Ujjayanta Palace, royal temples and the lush green hills of the east — Tripura is small, storied and unhurried.",
-    heroImage: ss("Jharkhand India forest nature"),
+    heroImage: ss("Tripura Northeast India"),
     destinations: ["agartala"],
     experiences: ["heritage", "culture"],
     bestTime: "October to March",
@@ -431,7 +431,7 @@ export const states: State[] = [
     tagline: "The last Shangri-La",
     description:
       "Kanchenjunga looming over pine valleys, Buddhist monasteries and India's first organic state — Sikkim is the Himalaya at its gentlest.",
-    heroImage: ss("Sikkim India Himalaya mountains"),
+    heroImage: ss("Sikkim Northeast India"),
     destinations: ["gangtok", "pelling"],
     experiences: ["mountains", "spiritual", "nature"],
     bestTime: "March to May, October to December",
@@ -445,7 +445,7 @@ export const states: State[] = [
     tagline: "Islands in the emerald sea",
     description:
       "Crystal water, coral reefs and rainforest islands — the Andamans are India's most beautiful coastline, floating far from the mainland.",
-    heroImage: ss("Andaman Nicobar Islands India beach"),
+    heroImage: ss("Andaman & Nicobar Islands India"),
     destinations: ["andaman"],
     experiences: ["beaches", "adventure", "nature"],
     bestTime: "November to May",
@@ -459,7 +459,7 @@ export const states: State[] = [
     tagline: "Coral atolls of the Arabian Sea",
     description:
       "Thirty-six islands of white sand and turquoise lagoons — Lakshadweep is India's most exclusive and least visited paradise.",
-    heroImage: ss("Lakshadweep Islands India coral beach"),
+    heroImage: ss("Lakshadweep Islands India"),
     destinations: ["lakshadweep"],
     experiences: ["beaches", "nature"],
     bestTime: "October to April",
@@ -473,7 +473,7 @@ export const states: State[] = [
     tagline: "The French quarter",
     description:
       "Pastel colonial streets, Auroville's experimental township and a quiet seaside promenade — Puducherry is India's most European corner.",
-    heroImage: ss("Telangana Hyderabad Charminar India"),
+    heroImage: ss("Puducherry South India"),
     destinations: ["puducherry", "auroville"],
     experiences: ["culture", "beaches", "food"],
     bestTime: "October to March",
@@ -487,7 +487,7 @@ export const states: State[] = [
     tagline: "The city beautiful",
     description:
       "Le Corbusier's modernist masterplan, the Rock Garden's recycled sculptures and wide boulevards — Chandigarh is India's most designed city.",
-    heroImage: ss("Telangana Hyderabad Charminar India"),
+    heroImage: ss("Chandigarh North India"),
     destinations: ["chandigarh"],
     experiences: ["culture", "food"],
     bestTime: "October to March",
@@ -501,7 +501,7 @@ export const states: State[] = [
     tagline: "Two coasts, one quiet territory",
     description:
       "Portuguese forts, sleepy beaches and the Silvassa forests — a small western territory made for unhurried weekends.",
-    heroImage: ss("Lakshadweep Islands India coral beach"),
+    heroImage: ss("Dadra & Nagar Haveli and Daman & Diu West India"),
     destinations: ["daman", "diu"],
     experiences: ["beaches", "heritage"],
     bestTime: "November to February",

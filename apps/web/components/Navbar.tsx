@@ -35,7 +35,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex min-h-16 max-w-[1600px] items-center justify-between px-6 py-3 sm:px-8 lg:px-12">
         <Link href="/" className="font-display text-2xl tracking-tight text-cream">
-          Estately
+          Nivaas
         </Link>
         <div className="flex items-center gap-4 lg:gap-5">
           {links.map((l) => {

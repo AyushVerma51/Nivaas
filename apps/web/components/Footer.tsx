@@ -95,8 +95,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-cream/15 pt-8 text-xs text-cream/45 sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} Estately — Real Estate & Neighborhood Intelligence.</p>
-          <p className="font-display text-sm tracking-wide">Estately · editorial, not template.</p>
+          <p>© {new Date().getFullYear()} Nivaas — Real Estate & Neighborhood Intelligence.</p>
+          <p className="font-display text-sm tracking-wide">Nivaas · editorial, not template.</p>
         </div>
       </div>
     </footer>

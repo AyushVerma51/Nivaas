@@ -1,20 +1,20 @@
 /**
  * Centralized image configuration for Atlas India.
  *
- * Uses SourceSplash for dynamic, no-API-key images.
- * SourceSplash: https://www.sourcesplash.com/i/random?q=QUERY&w=WIDTH
+ * Uses stable, keyless Unsplash images for Atlas cards and hero art.
  */
-const SS_BASE = "https://www.sourcesplash.com/i/random";
+import { getImageFallback } from "@/lib/image-fallbacks";
 
-/** SourceSplash image — no API key needed, hotlink-ready. */
+/** Stable destination or category image. */
 export function ss(query: string, w = 1600): string {
-  return `${SS_BASE}?q=${encodeURIComponent(query)}&w=${w}`;
+  return getImageFallback(query, w);
 }
 
-/** Legacy Unsplash helper — kept for backward compatibility. */
-export function img(id: string, w = 1600): string {
-  return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+/** Local photo helper for curated Atlas journey images. */
+export function img(id: string, _w = 1600): string {
+  const filename = id.startsWith("photo-") ? id : `photo-${id}`;
+  return `/images/places/${filename}.jpg`;
 }
 
-/** Hero fallback — SourceSplash India landscape */
+/** Hero fallback — Indian palace architecture. */
 export const HERO_FALLBACK = ss("India landscape mountains");

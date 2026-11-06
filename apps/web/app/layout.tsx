@@ -23,8 +23,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Estately — Find your home, know your neighborhood",
-    template: "%s · Estately",
+    default: "Nivaas — Find your home, know your neighborhood",
+    template: "%s · Nivaas",
   },
   description:
     "India-wide property listings, neighborhood intelligence, city guides, and AI-powered fair-price estimates — in one quiet, editorial place.",

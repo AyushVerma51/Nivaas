@@ -11,7 +11,7 @@ export const destinations: Destination[] = [
     tagline: "Where the Ganges meets eternity",
     description:
       "The oldest living city in the world. At dawn the ghats ignite with ritual, fire and prayer — an unbroken 3,000-year conversation between the living and the eternal.",
-    heroImage: ss("Varanasi India Ganges ghats temple"),
+    heroImage: ss("Varanasi Uttar Pradesh Spiritual India"),
     bestTime: "October to March",
     highlights: [
       "Subah-e-Banaras boat ride at sunrise",
@@ -30,7 +30,7 @@ export const destinations: Destination[] = [
     tagline: "Home of the Taj Mahal",
     description:
       "A monument of white marble that changes colour with the light — Agra holds the world's greatest love letter in stone, plus two more UNESCO forts within an hour.",
-    heroImage: ss("Taj Mahal Agra India sunrise"),
+    heroImage: ss("Agra Uttar Pradesh Heritage India"),
     bestTime: "October to March",
     highlights: [
       "Taj Mahal at sunrise",
@@ -49,7 +49,7 @@ export const destinations: Destination[] = [
     tagline: "A thousand years of empire",
     description:
       "Seven cities in one. Qutub Minar, Red Fort, Humayun's Tomb and bazaars that have traded for centuries — Delhi is layered, loud and endlessly rewarding.",
-    heroImage: ss("Delhi India Red Fort gate heritage"),
+    heroImage: ss("Delhi Delhi Culture India"),
     bestTime: "October to March",
     highlights: [
       "Old Delhi food walk through Chandni Chowk",
@@ -68,7 +68,7 @@ export const destinations: Destination[] = [
     tagline: "The pink city",
     description:
       "Walled in terracotta pink, crowned by the Hawa Mahal and guarded by the Amber Fort — Jaipur is Rajasthan's majestic, colourful capital.",
-    heroImage: ss("Jaipur Rajasthan India Amber Fort palace"),
+    heroImage: ss("Jaipur Rajasthan Heritage India"),
     bestTime: "October to March",
     highlights: [
       "Amber Fort and the Sheesh Mahal",
@@ -87,7 +87,7 @@ export const destinations: Destination[] = [
     tagline: "The blue city",
     description:
       "Indigo houses spill beneath the great Mehrangarh Fort — Jodhpur is Rajasthan's most cinematic skyline, blue against desert gold.",
-    heroImage: ss("Jodhpur Rajasthan India blue city fort"),
+    heroImage: ss("Jodhpur Rajasthan Heritage India"),
     bestTime: "October to March",
     highlights: [
       "Mehrangarh Fort at sunset",
@@ -106,7 +106,7 @@ export const destinations: Destination[] = [
     tagline: "City of lakes",
     description:
       "White palaces float on still water, ringed by the Aravalli hills — Udaipur is Rajasthan's most romantic city, and it knows it.",
-    heroImage: ss("Udaipur Rajasthan India lake palace white"),
+    heroImage: ss("Udaipur Rajasthan Heritage India"),
     bestTime: "September to March",
     highlights: [
       "Lake Pichola sunset boat ride",
@@ -125,7 +125,7 @@ export const destinations: Destination[] = [
     tagline: "The golden city",
     description:
       "A living fort of carved sandstone rising from the Thar — Jaisalmer is where the desert begins and the stars have no competition.",
-    heroImage: ss("Jaisalmer Rajasthan India golden desert fort"),
+    heroImage: ss("Jaisalmer Rajasthan Desert India"),
     bestTime: "October to February",
     highlights: [
       "Night in the Sam sand dunes",
@@ -144,7 +144,7 @@ export const destinations: Destination[] = [
     tagline: "The sacred lake town",
     description:
       "One of India's holiest towns, wrapped around a single lake — Pushkar is gentle, vegetarian and famous for its November camel fair.",
-    heroImage: ss("Pushkar Rajasthan India camel fair lake"),
+    heroImage: ss("Pushkar Rajasthan Spiritual India"),
     bestTime: "November to March",
     highlights: [
       "Pushkar Camel Fair (November)",
@@ -163,7 +163,7 @@ export const destinations: Destination[] = [
     tagline: "Shikaras on Dal Lake",
     description:
       "Houseboats, Mughal gardens and snow peaks reflected in still water — Srinagar is the valley's languid, beautiful capital.",
-    heroImage: ss("Srinagar Kashmir India Dal Lake shikara"),
+    heroImage: ss("Srinagar Jammu & Kashmir Mountains India"),
     bestTime: "April to October",
     highlights: [
       "Shikara ride on Dal Lake",
@@ -182,7 +182,7 @@ export const destinations: Destination[] = [
     tagline: "Meadow of flowers",
     description:
       "Asia's highest gondola lifts skiers and dreamers above flower meadows to the snowline — Gulmarg is Kashmir at its most alpine.",
-    heroImage: ss("Gulmarg Kashmir India meadow mountains snow"),
+    heroImage: ss("Gulmarg Jammu & Kashmir Mountains India"),
     bestTime: "December to March (snow), May to October (meadows)",
     highlights: [
       "Gondola to Apharwat Peak",
@@ -201,7 +201,7 @@ export const destinations: Destination[] = [
     tagline: "Capital of the high desert",
     description:
       "At 11,500 feet, Leh is where the Himalaya turns lunar — monasteries, stupas and the greatest mountain roads on earth.",
-    heroImage: ss("Leh Ladakh India mountains monastery"),
+    heroImage: ss("Leh Ladakh Adventure India"),
     bestTime: "May to September",
     highlights: [
       "Pangong Lake via Chang La pass",
@@ -220,7 +220,7 @@ export const destinations: Destination[] = [
     tagline: "The lake that changes colour",
     description:
       "A high-altitude lake that shifts from blue to green to violet across the day, set in the silence of the Changthang plateau.",
-    heroImage: ss("Leh Ladakh India mountains monastery"),
+    heroImage: ss("Pangong Lake Ladakh Adventure India"),
     bestTime: "June to September",
     highlights: [
       "Camp at the lakeside",
@@ -239,7 +239,7 @@ export const destinations: Destination[] = [
     tagline: "Gateway to the high Himalaya",
     description:
       "Pine forests, rafting rivers and mountain passes — Manali is the adventure town that launched a thousand Himalayan road trips.",
-    heroImage: ss("Manali Himachal Pradesh India mountains pine"),
+    heroImage: ss("Manali Himachal Pradesh Adventure India"),
     bestTime: "March to June, October to January (snow)",
     highlights: [
       "Solang Valley paragliding and skiing",
@@ -258,7 +258,7 @@ export const destinations: Destination[] = [
     tagline: "The colonial hill queen",
     description:
       "The old British summer capital — colonial churches, a Mall Road and toy trains climbing through pine forests.",
-    heroImage: ss("Udaipur Rajasthan India lake palace white"),
+    heroImage: ss("Shimla Himachal Pradesh Mountains India"),
     bestTime: "March to June, December to February (snow)",
     highlights: [
       "Toy train to Kalka (UNESCO)",
@@ -277,7 +277,7 @@ export const destinations: Destination[] = [
     tagline: "Home of the Dalai Lama",
     description:
       "Tibetan exile culture, mountain monasteries and the calm of McLeod Ganj — Dharamshala is the Himalaya's spiritual crossroads.",
-    heroImage: ss("Delhi India Red Fort gate heritage"),
+    heroImage: ss("Dharamshala Himachal Pradesh Spiritual India"),
     bestTime: "March to June, October to December",
     highlights: [
       "Kangra Valley views from Bhagsu",
@@ -296,7 +296,7 @@ export const destinations: Destination[] = [
     tagline: "Yoga town on the Ganges",
     description:
       "The world's yoga capital and India's rafting capital in one — Rishikesh is where seekers and adrenaline junkies share the same river.",
-    heroImage: ss("Gangtok Sikkim India mountains monastery"),
+    heroImage: ss("Rishikesh Uttarakhand Adventure India"),
     bestTime: "September to June",
     highlights: [
       "White-water rafting on the Ganges",
@@ -315,7 +315,7 @@ export const destinations: Destination[] = [
     tagline: "Gateway to the gods",
     description:
       "Where the Ganges leaves the mountains — Haridwar's evening aarti sets a thousand lamps adrift on the holy river.",
-    heroImage: ss("Varanasi India Ganges ghats temple"),
+    heroImage: ss("Haridwar Uttarakhand Spiritual India"),
     bestTime: "October to March",
     highlights: [
       "Har Ki Pauri Ganga Aarti",
@@ -334,7 +334,7 @@ export const destinations: Destination[] = [
     tagline: "The lake in the hills",
     description:
       "A pear-shaped emerald lake ringed by forested peaks — Nainital is the Kumaon hills' classic lake resort.",
-    heroImage: ss("Srinagar Kashmir India Dal Lake shikara"),
+    heroImage: ss("Nainital Uttarakhand Nature India"),
     bestTime: "March to June, October to February (snow)",
     highlights: [
       "Boating on Naini Lake",
@@ -353,7 +353,7 @@ export const destinations: Destination[] = [
     tagline: "The golden temple's city",
     description:
       "The Harmandir Sahib glows gold over its sacred pool, and the Wagah border ceremony erupts each evening — Amritsar is Punjab's radiant heart.",
-    heroImage: ss("Amritsar Punjab India Golden Temple"),
+    heroImage: ss("Amritsar Punjab Spiritual India"),
     bestTime: "October to March",
     highlights: [
       "Golden Temple at sunrise",
@@ -372,7 +372,7 @@ export const destinations: Destination[] = [
     tagline: "The city beautiful",
     description:
       "Le Corbusier's planned city of boulevards, the Rock Garden's folk-art fantasy, and lakeside evenings — India's most designed metropolis.",
-    heroImage: ss("Chandigarh India Rock Garden city"),
+    heroImage: ss("Chandigarh Chandigarh Culture India"),
     bestTime: "October to March",
     highlights: [
       "Rock Garden's recycled sculptures",
@@ -391,7 +391,7 @@ export const destinations: Destination[] = [
     tagline: "The white desert",
     description:
       "An endless salt flat that turns silver under the full moon — the Rann is Gujarat's surreal, shimmering otherworld.",
-    heroImage: ss("Pushkar Rajasthan India camel fair lake"),
+    heroImage: ss("Rann of Kutch Gujarat Desert India"),
     bestTime: "November to February",
     highlights: [
       "Full-moon nights on the white desert",
@@ -410,7 +410,7 @@ export const destinations: Destination[] = [
     tagline: "Krishna's ancient city",
     description:
       "One of the four holiest Char Dham sites, where legend places Krishna's capital — Dwarka sits where the desert meets the sea.",
-    heroImage: ss("Dwarka Gujarat India temple coast"),
+    heroImage: ss("Dwarka Gujarat Spiritual India"),
     bestTime: "November to February",
     highlights: [
       "Dwarkadhish Temple's towering shikhara",
@@ -429,7 +429,7 @@ export const destinations: Destination[] = [
     tagline: "Home of the Asiatic lion",
     description:
       "The only place on earth where Asiatic lions roam wild — Gir's teak forests hold India's most exclusive safari.",
-    heroImage: ss("Gir National Park Gujarat India lion wildlife"),
+    heroImage: ss("Gir National Park Gujarat Wildlife India"),
     bestTime: "December to March",
     highlights: [
       "Lion safari at dawn",
@@ -448,7 +448,7 @@ export const destinations: Destination[] = [
     tagline: "Temples carved from mountains",
     description:
       "Monasteries, shrines and the great Kailasa — two UNESCO cave complexes carved by hand into the Deccan rock over centuries.",
-    heroImage: ss("Mumbai India Marine Drive city skyline"),
+    heroImage: ss("Ajanta & Ellora Maharashtra Heritage India"),
     bestTime: "November to February",
     highlights: [
       "Kailasa Temple, carved top-down",
@@ -467,7 +467,7 @@ export const destinations: Destination[] = [
     tagline: "The city that never sleeps",
     description:
       "Bollywood, dabbawalas, colonial arches and monsoon beaches — Mumbai is India's most alive city, powered by pure momentum.",
-    heroImage: ss("Mumbai India Marine Drive city skyline"),
+    heroImage: ss("Mumbai Maharashtra Culture India"),
     bestTime: "November to February",
     highlights: [
       "Marine Drive at night",
@@ -486,7 +486,7 @@ export const destinations: Destination[] = [
     tagline: "Monsoon hills of the ghats",
     description:
       "Misty valleys, forts and waterfalls along the Western Ghats — Lonavala is Mumbai's green escape and chikki capital.",
-    heroImage: ss("Lonavala Maharashtra India monsoon hills"),
+    heroImage: ss("Lonavala Maharashtra Nature India"),
     bestTime: "June to September (monsoon), November to February",
     highlights: [
       "Tiger Point and sunset views",
@@ -505,7 +505,7 @@ export const destinations: Destination[] = [
     tagline: "Sun, sand and slow living",
     description:
       "Portuguese churches, beach shacks and rivers of palm — Goa is India's original holiday state, north loud and south serene.",
-    heroImage: ss("Dwarka Gujarat India temple coast"),
+    heroImage: ss("Goa Goa Beaches India"),
     bestTime: "November to March",
     highlights: [
       "Palolem and Agonda in the south",
@@ -524,7 +524,7 @@ export const destinations: Destination[] = [
     tagline: "Ruins of the Vijayanagara empire",
     description:
       "Boulders, temples and the remains of a medieval superpower — Hampi is a UNESCO open-air museum unlike any other on earth.",
-    heroImage: ss("Hampi Karnataka India ruins boulders temple"),
+    heroImage: ss("Hampi Karnataka Heritage India"),
     bestTime: "November to February",
     highlights: [
       "Virupaksha Temple at dawn",
@@ -543,7 +543,7 @@ export const destinations: Destination[] = [
     tagline: "City of palaces",
     description:
       "The Amba Vilas Palace in all its illuminated glory — Mysuru is Karnataka's royal city, famous for Dasara and silk.",
-    heroImage: ss("Hampi Karnataka India ruins boulders temple"),
+    heroImage: ss("Mysuru Karnataka Heritage India"),
     bestTime: "September to March",
     highlights: [
       "Mysore Palace light-up at dusk",
@@ -562,7 +562,7 @@ export const destinations: Destination[] = [
     tagline: "Scotland of India",
     description:
       "Misty coffee estates, waterfalls and Kodava hospitality — Coorg is the Western Ghats' greenest, most aromatic district.",
-    heroImage: ss("Coorg Karnataka India coffee estate mist"),
+    heroImage: ss("Coorg Karnataka Nature India"),
     bestTime: "October to March",
     highlights: [
       "Coffee plantation walks",
@@ -581,7 +581,7 @@ export const destinations: Destination[] = [
     tagline: "Garden city of India",
     description:
       "Tech capital by day, garden city and craft-beer town by night — Bengaluru is India's most cosmopolitan southern city.",
-    heroImage: ss("Bengaluru Karnataka India city garden"),
+    heroImage: ss("Bengaluru Karnataka Culture India"),
     bestTime: "October to March",
     highlights: [
       "Lalbagh and Cubbon Park mornings",
@@ -600,7 +600,7 @@ export const destinations: Destination[] = [
     tagline: "Venice of the East",
     description:
       "Houseboats drift through palm-lined backwaters — Alleppey is Kerala's most iconic, most serene experience.",
-    heroImage: ss("Alleppey Kerala India backwaters houseboat"),
+    heroImage: ss("Alleppey Kerala Nature India"),
     bestTime: "September to March",
     highlights: [
       "Overnight houseboat on the backwaters",
@@ -619,7 +619,7 @@ export const destinations: Destination[] = [
     tagline: "Tea gardens in the clouds",
     description:
       "Rolling tea estates at 6,000 feet, wildflowers and mist — Munnar is Kerala's cool, green highlands.",
-    heroImage: ss("Coorg Karnataka India coffee estate mist"),
+    heroImage: ss("Munnar Kerala Nature India"),
     bestTime: "September to March",
     highlights: [
       "Tea museum and estate tours",
@@ -638,7 +638,7 @@ export const destinations: Destination[] = [
     tagline: "Queen of the Arabian Sea",
     description:
       "Chinese fishing nets, Dutch houses and synagogues — Kochi is Kerala's trading-history port, layered with the world.",
-    heroImage: ss("Coorg Karnataka India coffee estate mist"),
+    heroImage: ss("Kochi Kerala Culture India"),
     bestTime: "October to March",
     highlights: [
       "Fort Kochi's Chinese fishing nets",
@@ -657,7 +657,7 @@ export const destinations: Destination[] = [
     tagline: "Kerala's southern capital",
     description:
       "Temple city by day, palm beaches by evening — Trivandrum is where Kerala's culture meets its best coastline.",
-    heroImage: ss("Trivandrum Kerala India beach Kovalam"),
+    heroImage: ss("Thiruvananthapuram Kerala Beaches India"),
     bestTime: "September to March",
     highlights: [
       "Padmanabhaswamy Temple",
@@ -676,7 +676,7 @@ export const destinations: Destination[] = [
     tagline: "City of the Meenakshi temple",
     description:
       "Fourteen gopurams painted with a million gods — Madurai's temple is southern India's most spectacular sacred complex.",
-    heroImage: ss("Bengaluru Karnataka India city garden"),
+    heroImage: ss("Madurai Tamil Nadu Spiritual India"),
     bestTime: "October to March",
     highlights: [
       "Meenakshi Amman Temple at night",
@@ -695,7 +695,7 @@ export const destinations: Destination[] = [
     tagline: "Shore temple by the sea",
     description:
       "Rock-cut rathas and a temple that has faced the Bay of Bengal for 1,300 years — Mahabalipuram is Pallava stone at its finest.",
-    heroImage: ss("Bengaluru Karnataka India city garden"),
+    heroImage: ss("Mahabalipuram Tamil Nadu Heritage India"),
     bestTime: "November to February",
     highlights: [
       "Shore Temple at sunrise",
@@ -714,7 +714,7 @@ export const destinations: Destination[] = [
     tagline: "Where three seas meet",
     description:
       "The southernmost tip of India — sunrise over the meeting of the Arabian Sea, Bay of Bengal and Indian Ocean.",
-    heroImage: ss("Kanyakumari Tamil Nadu India three seas sunrise"),
+    heroImage: ss("Kanyakumari Tamil Nadu Beaches India"),
     bestTime: "October to March",
     highlights: [
       "Sunrise at Vivekananda Rock",
@@ -733,7 +733,7 @@ export const destinations: Destination[] = [
     tagline: "Queen of the Nilgiris",
     description:
       "Tea slopes, toy trains and botanic gardens at 7,000 feet — Ooty is the south's classic hill station.",
-    heroImage: ss("Coorg Karnataka India coffee estate mist"),
+    heroImage: ss("Ooty Tamil Nadu Nature India"),
     bestTime: "March to June, September to November",
     highlights: [
       "Nilgiri toy train",
@@ -752,7 +752,7 @@ export const destinations: Destination[] = [
     tagline: "City of pearls and biryani",
     description:
       "Golconda's acoustic wonder, the Charminar's bazaars and a food culture that needs no defence — Hyderabad is Deccan grandeur.",
-    heroImage: ss("Chandigarh India Rock Garden city"),
+    heroImage: ss("Hyderabad Telangana Heritage India"),
     bestTime: "October to March",
     highlights: [
       "Charminar and Laad Bazaar",
@@ -771,7 +771,7 @@ export const destinations: Destination[] = [
     tagline: "The hill of Lord Venkateswara",
     description:
       "One of the world's most visited pilgrimage sites — Tirupati's seven hills draw millions of devotees each year.",
-    heroImage: ss("Bengaluru Karnataka India city garden"),
+    heroImage: ss("Tirupati Andhra Pradesh Spiritual India"),
     bestTime: "October to March",
     highlights: [
       "Tirumala darshan",
@@ -790,7 +790,7 @@ export const destinations: Destination[] = [
     tagline: "City of destiny",
     description:
       "Araku Valley's coffee hills, the Bay of Bengal's long beaches and the ancient Buddhist site of Borra — Vizag has it all.",
-    heroImage: ss("Srinagar Kashmir India Dal Lake shikara"),
+    heroImage: ss("Visakhapatnam Andhra Pradesh Beaches India"),
     bestTime: "October to March",
     highlights: [
       "Araku Valley toy train",
@@ -809,7 +809,7 @@ export const destinations: Destination[] = [
     tagline: "Temples of celestial love",
     description:
       "Carved sandstone temples where divine and human passion meet in stone — Khajuraho is India's most sensuous UNESCO site.",
-    heroImage: ss("Hampi Karnataka India ruins boulders temple"),
+    heroImage: ss("Khajuraho Madhya Pradesh Heritage India"),
     bestTime: "October to March",
     highlights: [
       "Western group of temples at sunrise",
@@ -828,7 +828,7 @@ export const destinations: Destination[] = [
     tagline: "A royal town frozen in time",
     description:
       "Chhatris on the Betwa river and palaces that time forgot — Orchha is Bundela grandeur in a quiet river town.",
-    heroImage: ss("Orchha Madhya Pradesh India palace river chhatris"),
+    heroImage: ss("Orchha Madhya Pradesh Heritage India"),
     bestTime: "October to March",
     highlights: [
       "Jahangir Mahal",
@@ -847,7 +847,7 @@ export const destinations: Destination[] = [
     tagline: "The land of the tiger",
     description:
       "The inspiration for Kipling's Jungle Book — Kanha's sal forests hold one of India's best tiger populations.",
-    heroImage: ss("Gir National Park Gujarat India lion wildlife"),
+    heroImage: ss("Kanha National Park Madhya Pradesh Wildlife India"),
     bestTime: "October to June",
     highlights: [
       "Tiger safaris at dawn",
@@ -866,7 +866,7 @@ export const destinations: Destination[] = [
     tagline: "Where the Buddha woke up",
     description:
       "Under the Bodhi tree, Siddhartha became the Buddha — Bodh Gaya is Buddhism's most sacred pilgrimage site.",
-    heroImage: ss("Bodh Gaya Bihar India Mahabodhi temple"),
+    heroImage: ss("Bodh Gaya Bihar Spiritual India"),
     bestTime: "October to March",
     highlights: [
       "Mahabodhi Temple complex",
@@ -885,7 +885,7 @@ export const destinations: Destination[] = [
     tagline: "The world's first university",
     description:
       "A 5th-century monastic university that taught the world — Nalanda's red-brick ruins still inspire awe.",
-    heroImage: ss("Nalanda Bihar India ruins university"),
+    heroImage: ss("Nalanda Bihar Heritage India"),
     bestTime: "October to March",
     highlights: [
       "Nalanda ruins and museum",
@@ -904,7 +904,7 @@ export const destinations: Destination[] = [
     tagline: "Queen of the hills",
     description:
       "Kanchenjunga at dawn, toy trains and the world's most famous tea — Darjeeling is the Himalaya's most romantic hill station.",
-    heroImage: ss("Darjeeling West Bengal India tea garden Kanchenjunga"),
+    heroImage: ss("Darjeeling West Bengal Mountains India"),
     bestTime: "March to May, October to December",
     highlights: [
       "Tiger Hill sunrise over Kanchenjunga",
@@ -923,7 +923,7 @@ export const destinations: Destination[] = [
     tagline: "Capital in the clouds",
     description:
       "Nathula passes, monasteries and prayer flags — Gangtok is the gateway to Sikkim's clean, calm Himalaya.",
-    heroImage: ss("Gulmarg Kashmir India meadow mountains snow"),
+    heroImage: ss("Gangtok Sikkim Mountains India"),
     bestTime: "March to May, October to December",
     highlights: [
       "Tsomgo Lake and Nathula pass",
@@ -942,7 +942,7 @@ export const destinations: Destination[] = [
     tagline: "Facing Kanchenjunga",
     description:
       "The closest you can stand to Kanchenjunga's massif — Pelling is quiet Sikkim with the world's best mountain view.",
-    heroImage: ss("Gulmarg Kashmir India meadow mountains snow"),
+    heroImage: ss("Pelling Sikkim Mountains India"),
     bestTime: "October to May",
     highlights: [
       "Kanchenjunga sunrise from Khecheopalri",
@@ -961,7 +961,7 @@ export const destinations: Destination[] = [
     tagline: "Scotland of the East",
     description:
       "Waterfalls, pine hills and a music scene that never stops — Shillong is the Northeast's most spirited hill capital.",
-    heroImage: ss("Gangtok Sikkim India mountains monastery"),
+    heroImage: ss("Shillong Meghalaya Culture India"),
     bestTime: "October to May",
     highlights: [
       "Umiam Lake",
@@ -980,7 +980,7 @@ export const destinations: Destination[] = [
     tagline: "The wettest place on earth",
     description:
       "Rainforest canyons, living root bridges and mists that roll like tides — Cherrapunji redefined what wet means.",
-    heroImage: ss("Cherrapunji Meghalaya India waterfall living root"),
+    heroImage: ss("Cherrapunji Meghalaya Nature India"),
     bestTime: "October to May",
     highlights: [
       "Nohkalikai Falls",
@@ -999,7 +999,7 @@ export const destinations: Destination[] = [
     tagline: "The rainiest place on earth",
     description:
       "The village that receives more rain than anywhere else — Mawsynram is a world of waterfalls and living roots.",
-    heroImage: ss("Lonavala Maharashtra India monsoon hills"),
+    heroImage: ss("Mawsynram Meghalaya Nature India"),
     bestTime: "October to May",
     highlights: [
       "Mawjymbuin caves",
@@ -1018,7 +1018,7 @@ export const destinations: Destination[] = [
     tagline: "Land of the one-horned rhino",
     description:
       "Two-thirds of the world's one-horned rhinos graze Kaziranga's grasslands — the finest wildlife park in India.",
-    heroImage: ss("Gir National Park Gujarat India lion wildlife"),
+    heroImage: ss("Kaziranga Assam Wildlife India"),
     bestTime: "November to April",
     highlights: [
       "Elephant safari at dawn",
@@ -1037,7 +1037,7 @@ export const destinations: Destination[] = [
     tagline: "Gateway to the Northeast",
     description:
       "Kamakhya's temple hill and Brahmaputra cruises — Guwahati is where the Northeast journey begins.",
-    heroImage: ss("Nalanda Bihar India ruins university"),
+    heroImage: ss("Guwahati Assam Culture India"),
     bestTime: "November to March",
     highlights: [
       "Kamakhya Temple",
@@ -1056,7 +1056,7 @@ export const destinations: Destination[] = [
     tagline: "The dawn-lit monastery",
     description:
       "India's largest monastery, mountain passes and the borderland of the eastern Himalaya — Tawang is remote in the best way.",
-    heroImage: ss("Gulmarg Kashmir India meadow mountains snow"),
+    heroImage: ss("Tawang Arunachal Pradesh Mountains India"),
     bestTime: "October to April",
     highlights: [
       "Tawang Monastery at dawn",
@@ -1075,7 +1075,7 @@ export const destinations: Destination[] = [
     tagline: "Land of the Angami warriors",
     description:
       "The WWII battlefield of Kohima and living Naga culture — Kohima is the Northeast's most storied hill capital.",
-    heroImage: ss("Gangtok Sikkim India mountains monastery"),
+    heroImage: ss("Kohima Nagaland Culture India"),
     bestTime: "November to April",
     highlights: [
       "Kohima War Cemetery",
@@ -1094,7 +1094,7 @@ export const destinations: Destination[] = [
     tagline: "The valley of flowers of the east",
     description:
       "A flower-filled high valley shared by Nagaland and Manipur — Dzüko is the Northeast's great trek.",
-    heroImage: ss("Lonavala Maharashtra India monsoon hills"),
+    heroImage: ss("Dzüko Valley Nagaland Adventure India"),
     bestTime: "June to October",
     highlights: [
       "Dzükou trek (3–4 days)",
@@ -1113,7 +1113,7 @@ export const destinations: Destination[] = [
     tagline: "The floating islands",
     description:
       "The only floating national park on earth — Loktak's phumdis drift with the world's last sangai deer.",
-    heroImage: ss("Manipur India Loktak Lake floating islands"),
+    heroImage: ss("Loktak Lake Manipur Nature India"),
     bestTime: "October to March",
     highlights: [
       "Keibul Lamjao floating park",
@@ -1132,7 +1132,7 @@ export const destinations: Destination[] = [
     tagline: "City in the blue mountains",
     description:
       "Ridges of red-roofed homes above green valleys — Aizawl is Mizoram's clean, musical capital.",
-    heroImage: ss("Gangtok Sikkim India mountains monastery"),
+    heroImage: ss("Aizawl Mizoram Culture India"),
     bestTime: "November to March",
     highlights: [
       "Durtlang hills viewpoint",
@@ -1151,7 +1151,7 @@ export const destinations: Destination[] = [
     tagline: "Palace city of the east",
     description:
       "The Ujjayanta Palace and royal temples — Agartala is Tripura's quiet, historic capital.",
-    heroImage: ss("Chandigarh India Rock Garden city"),
+    heroImage: ss("Agartala Tripura Heritage India"),
     bestTime: "October to March",
     highlights: [
       "Ujjayanta Palace",
@@ -1170,7 +1170,7 @@ export const destinations: Destination[] = [
     tagline: "The sun temple's chariot",
     description:
       "A 13th-century temple built as the sun god's chariot — Konark's carved wheels have turned for 800 years.",
-    heroImage: ss("Nalanda Bihar India ruins university"),
+    heroImage: ss("Konark Odisha Heritage India"),
     bestTime: "November to February",
     highlights: [
       "Sun Temple at sunrise",
@@ -1189,7 +1189,7 @@ export const destinations: Destination[] = [
     tagline: "Jagannath's seaside town",
     description:
       "The Jagannath Temple and long golden beaches — Puri is Odisha's holiest and most laid-back town.",
-    heroImage: ss("Gangtok Sikkim India mountains monastery"),
+    heroImage: ss("Puri Odisha Spiritual India"),
     bestTime: "November to February",
     highlights: [
       "Jagannath Temple darshan",
@@ -1208,7 +1208,7 @@ export const destinations: Destination[] = [
     tagline: "Niagara of India",
     description:
       "India's widest waterfall, horseshoe-shaped across the Indravati river — Chitrakote is the tribal heart's grand spectacle.",
-    heroImage: ss("Cherrapunji Meghalaya India waterfall living root"),
+    heroImage: ss("Chitrakote Falls Chhattisgarh Nature India"),
     bestTime: "July to October (monsoon), November to February",
     highlights: [
       "Monsoon flow at full power",
@@ -1227,7 +1227,7 @@ export const destinations: Destination[] = [
     tagline: "The falls of Chota Nagpur",
     description:
       "Hundru's 98-metre drop and the plateau forests of Jharkhand — Ranchi is eastern India's green weekend.",
-    heroImage: ss("Gangtok Sikkim India mountains monastery"),
+    heroImage: ss("Ranchi & Hundru Falls Jharkhand Nature India"),
     bestTime: "October to March",
     highlights: [
       "Hundru Falls",
@@ -1246,7 +1246,7 @@ export const destinations: Destination[] = [
     tagline: "The city of joy",
     description:
       "Victorian avenues, tram lines, adda and the world's best street food — Kolkata is India's most soulful metropolis.",
-    heroImage: ss("Chandigarh India Rock Garden city"),
+    heroImage: ss("Kolkata West Bengal Culture India"),
     bestTime: "October to March",
     highlights: [
       "Victoria Memorial at sunset",
@@ -1265,7 +1265,7 @@ export const destinations: Destination[] = [
     tagline: "Realm of the royal Bengal tiger",
     description:
       "The world's largest mangrove delta, where tigers swim between islands — the Sundarbans is India's wildest river country.",
-    heroImage: ss("Cherrapunji Meghalaya India waterfall living root"),
+    heroImage: ss("Sundarbans West Bengal Wildlife India"),
     bestTime: "November to February",
     highlights: [
       "Sundarbans tiger cruise",
@@ -1284,7 +1284,7 @@ export const destinations: Destination[] = [
     tagline: "Emerald seas and rainforest",
     description:
       "Coral reefs, limestone caves and some of Asia's best beaches — the Andamans are India's island escape.",
-    heroImage: ss("Kanyakumari Tamil Nadu India three seas sunrise"),
+    heroImage: ss("Andaman Islands Andaman & Nicobar Beaches India"),
     bestTime: "November to May",
     highlights: [
       "Radhanagar Beach, Havelock",
@@ -1303,7 +1303,7 @@ export const destinations: Destination[] = [
     tagline: "Coral atolls of the Arabian Sea",
     description:
       "Uncrowded lagoons and reefs in technicolour — Lakshadweep is India's most exclusive island chain.",
-    heroImage: ss("Kanyakumari Tamil Nadu India three seas sunrise"),
+    heroImage: ss("Lakshadweep Lakshadweep Beaches India"),
     bestTime: "October to April",
     highlights: [
       "Agatti island lagoon",
@@ -1322,7 +1322,7 @@ export const destinations: Destination[] = [
     tagline: "The French quarter by the sea",
     description:
       "Pastel villas, a boulevard café and the Sri Aurobindo Ashram — Puducherry is India's gentlest colonial town.",
-    heroImage: ss("Chandigarh India Rock Garden city"),
+    heroImage: ss("Puducherry Puducherry Culture India"),
     bestTime: "October to March",
     highlights: [
       "White Town promenade",
@@ -1341,7 +1341,7 @@ export const destinations: Destination[] = [
     tagline: "The city of dawn",
     description:
       "An international township built around a golden sphere — Auroville is an experiment in human unity.",
-    heroImage: ss("Chandigarh India Rock Garden city"),
+    heroImage: ss("Auroville Puducherry Culture India"),
     bestTime: "October to March",
     highlights: [
       "Matrimandir viewpoint",
@@ -1360,7 +1360,7 @@ export const destinations: Destination[] = [
     tagline: "The Portuguese coast",
     description:
       "Fort walls, fishing villages and quiet beaches — Daman is a small western coast made for slow weekends.",
-    heroImage: ss("Trivandrum Kerala India beach Kovalam"),
+    heroImage: ss("Daman Dadra & Nagar Haveli and Daman & Diu Beaches India"),
     bestTime: "November to February",
     highlights: [
       "Daman Fort",
@@ -1379,7 +1379,7 @@ export const destinations: Destination[] = [
     tagline: "An island of forts and palms",
     description:
       "A tiny Portuguese-era island with a great fort, calm beaches and cycling lanes — Diu is India's most relaxed coast.",
-    heroImage: ss("Kanyakumari Tamil Nadu India three seas sunrise"),
+    heroImage: ss("Diu Dadra & Nagar Haveli and Daman & Diu Beaches India"),
     bestTime: "November to February",
     highlights: [
       "Diu Fort at sunset",
@@ -1398,7 +1398,7 @@ export const destinations: Destination[] = [
     tagline: "Millennium city",
     description:
       "The corporate capital beside Delhi — but also Sultanpur's bird lake and the heritage villages of the Aravalli foothills.",
-    heroImage: ss("Orchha Madhya Pradesh India palace river chhatris"),
+    heroImage: ss("Gurugram Haryana Culture India"),
     bestTime: "October to March",
     highlights: [
       "Sultanpur National Park birding",
@@ -1417,7 +1417,7 @@ export const destinations: Destination[] = [
     tagline: "City of nawabs and kebabs",
     description:
       "Nawabi architecture, refined etiquette and the most famous food in northern India — Lucknow is grace on the Gomti.",
-    heroImage: ss("Orchha Madhya Pradesh India palace river chhatris"),
+    heroImage: ss("Lucknow Uttar Pradesh Culture India"),
     bestTime: "October to March",
     highlights: [
       "Bara Imambara's labyrinth",
@@ -1436,7 +1436,7 @@ export const destinations: Destination[] = [
     tagline: "Where the rivers meet",
     description:
       "The sangam of the Ganges, Yamuna and the mythical Saraswati — Prayagraj hosts the world's largest gathering of humanity.",
-    heroImage: ss("Varanasi India Ganges ghats temple"),
+    heroImage: ss("Prayagraj Uttar Pradesh Spiritual India"),
     bestTime: "October to March",
     highlights: [
       "Sangam boat ride at dawn",
